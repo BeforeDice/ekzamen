@@ -7,15 +7,14 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class StartScreen extends AppCompatActivity {
-    @Override
+public class History extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.startscreen);
+        setContentView(R.layout.history);
     }
     public void onClickMenu(View v) {
-        Intent a = new Intent(StartScreen.this, Menu.class);
+        Intent a = new Intent(History.this, Menu.class);
         startActivity(a);
         finish();
     }
